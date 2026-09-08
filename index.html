@@ -236,10 +236,12 @@ section{padding:clamp(60px,8vw,116px) clamp(20px,5vw,72px)}
 
 /* ==================== MOLDURA DE CELULAR ==================== */
 .iphone-frame,.phone{position:relative;width:min(100%,393px);aspect-ratio:393 / 852;max-width:100%;background:linear-gradient(135deg,#1a1d22 0%,#090b10 34%,#111624 100%);
-  border:1px solid rgba(255,255,255,.12);border-radius:46px;padding:12px;box-shadow:0 30px 80px -30px rgba(0,0,0,.72),inset 0 0 0 1px rgba(255,255,255,.05),0 0 0 1px rgba(103,232,249,.08);flex:none}
+  border:1px solid rgba(255,255,255,.12);border-radius:46px;padding:12px;box-shadow:0 40px 110px -48px rgba(0,0,0,.88),0 22px 38px -22px rgba(0,0,0,.75),inset 0 0 0 1px rgba(255,255,255,.06),0 0 0 1px rgba(103,232,249,.06);flex:none;
+  transform:rotateX(4deg) rotateY(-12deg) translateY(-4px);transform-style:preserve-3d;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.iphone-frame:hover,.phone:hover{transform:rotateX(2deg) rotateY(-8deg) translateY(-8px);box-shadow:0 46px 120px -42px rgba(0,0,0,.95),0 28px 44px -22px rgba(15,23,42,.82),inset 0 0 0 1px rgba(255,255,255,.08),0 0 0 1px rgba(103,232,249,.08)}
 .iphone-frame::before,.phone::before{content:"";position:absolute;top:28%;left:-2px;width:3px;height:130px;border-radius:999px;background:linear-gradient(180deg,#1b1d22,#3a3d42,#1b1d22);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
 .iphone-frame::after,.phone::after{content:"";position:absolute;top:34%;right:-2px;width:3px;height:96px;border-radius:999px;background:linear-gradient(180deg,#1b1d22,#3a3d42,#1b1d22);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
-.iphone-frame .screen,.pscreen{position:relative;background:radial-gradient(140% 120% at 50% -10%, rgba(103,232,249,.18), transparent 35%),radial-gradient(120% 94% at 75% 12%, rgba(167,243,208,.14), transparent 26%),linear-gradient(180deg,#101a22 0%,#0b1117 30%,#070b10 100%);border:1px solid rgba(255,255,255,.08);border-radius:38px;overflow:hidden;height:100%;display:flex;flex-direction:column}
+.iphone-frame .screen,.pscreen{position:relative;background:radial-gradient(140% 120% at 50% -10%, rgba(103,232,249,.18), transparent 35%),radial-gradient(120% 94% at 75% 12%, rgba(167,243,208,.14), transparent 26%),linear-gradient(180deg,#101a22 0%,#0b1117 30%,#070b10 100%);border:1px solid rgba(255,255,255,.08);border-radius:38px;overflow:hidden;height:100%;display:flex;flex-direction:column;transform:translateZ(16px)}
 .pnotch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:98px;height:24px;border-radius:18px;
   background:linear-gradient(180deg,rgba(8,8,12,.86),rgba(17,17,20,.94));border:1px solid rgba(255,255,255,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
   z-index:5}
